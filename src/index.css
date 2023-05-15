@@ -1,0 +1,36 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  overflow: hidden;
+}
+#Corpo{
+  background: rgb(44, 42, 42);
+  color: white;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+#BodyJr{
+  margin-top: 4vh;
+  margin-left: 2vh;
+  width: 44vh;
+  height: 70vh;
+  text-align: center;
+  border: 0.2vh solid red;
+  color: red;
+  background: rgb(20, 14, 14);
+}
+#Header{
+  position: absolute;
+  top: 0;
+  border: 0.2vh solid red;
+  background: red;
+  width: 100%;
+  text-align: center;
+}
+#Confi{
+  display: none;
+}

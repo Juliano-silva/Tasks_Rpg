@@ -1,0 +1,13 @@
+.Confi{
+    border: 0.2vh solid red;
+    position: absolute;
+    background: red;
+    width: 50vh;
+    height: 60vh;
+    margin-left: -25vh;
+}
+.Confi > div > input{
+    display: block;
+    margin: auto;
+    margin-top: 2vh;
+}

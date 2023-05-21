@@ -3,10 +3,14 @@
   padding: 0;
 }
 body{
-  overflow: hidden;
+overflow: auto;
+overflow-x: hidden;
+}
+body::-webkit-scrollbar{
+  width: 0px;
 }
 #Corpo{
-  background: rgb(44, 42, 42);
+  background: rgb(17, 8, 14);
   color: white;
   display: flex;
   height: 100vh;
@@ -15,22 +19,90 @@ body{
 }
 #BodyJr{
   margin-top: 4vh;
-  margin-left: 2vh;
+  margin-left: 3vh;
   width: 44vh;
   height: 70vh;
   text-align: center;
-  border: 0.2vh solid red;
-  color: red;
-  background: rgb(20, 14, 14);
+  --angle: 0vh;
+	border: 0.4vh solid;
+	border-image: conic-gradient(from var(--angle), rgb(109, 6, 109),rgb(218, 218, 39),purple,yellow,purple) 1;
+	animation: 10s rotate linear infinite;
+  color: white;
+  border-radius: 1vh;
+  background: rgb(27, 18, 27);
+  font-size: 2vh;
+  overflow: auto;
+}
+#BodyJr::-webkit-scrollbar{
+  width: 0px;
 }
 #Header{
   position: absolute;
   top: 0;
-  border: 0.2vh solid red;
-  background: red;
+  background: rgb(27, 18, 27);
   width: 100%;
+  height: 13vh;
   text-align: center;
 }
 #Confi{
   display: none;
+}
+summary::marker {
+  content: none;
+}
+#Image{
+  display: none
+}
+#img,#videos,#link,#NotExt{
+  display: none;
+}
+::placeholder{
+  color: white;
+}
+textarea::-webkit-scrollbar{
+  width: 0px;
+}
+input[type=number]::-webkit-inner-spin-button { 
+  -webkit-appearance: none;
+  
+}
+input[type=number]{ 
+ -moz-appearance: textfield;
+ appearance: textfield;
+}
+@keyframes rotate {
+	to {
+		--angle: 360deg;
+	}
+}
+
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+iframe{
+  all: unset;
+  width: 100%;
+}
+img,iframe{
+  display: block;
+}
+img[src=""],img[src="null"], img[src="undefined"],iframe[src=""],iframe[src="null"], iframe[src="undefined"]{
+  display: none;
+}
+#BodyJr > h1{
+  all: unset;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  cursor: pointer;
+  color: gold;
+  text-shadow: 0.1vh 0.1vh 0.1vh purple;
+  font-size: 4vh;
+  display: block;
+  margin-top: 2vh;
+}
+a{
+  text-decoration: none;
 }

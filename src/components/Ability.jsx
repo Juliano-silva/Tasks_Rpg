@@ -43,7 +43,7 @@ const List = ({ items }) => {
                     var Background = "goldenrod"
                     var Raridade = "ULTIMATE"
                 }else if(soma >= 100000 || soma1 >= 100000 || soma2 >= 100000 || soma3 >= 100000){
-                    var Background = Gerar(8)
+                    var Background = "red"
                     var Raridade = "???"
                 }
                 return (

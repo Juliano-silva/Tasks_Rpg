@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import style from './style.module.css'
 const List = ({ items, removeItem }) => {
     return (
-        <div className={style.CompanioBody}>
+        <div id='Compannions' className={style.CompanioBody}>
             {items.map((item) => {
                 const { id, title, spriteC, spriteDesciption,lvl } = item;
                 return (
@@ -82,7 +82,7 @@ const Companions = () => {
     return (
         <div>
             <section>
-                <button onClick={Abrir} className={style.CompanionsBtn}>+</button>
+                <button onClick={Abrir} id='CompanionsBUTTON' className={style.CompanionsBtn}><h1>+</h1></button>
                 <div id='ConfiC' className={style.ConfiCentralizada}>
                     <button onClick={Fechar}>✖</button>
                     <h1 style={{ marginTop: "5vh" }}>Criando um Companheiro</h1>

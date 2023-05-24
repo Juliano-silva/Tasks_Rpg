@@ -9,14 +9,6 @@ if (Moeda === "NaN"){
     var Num = parseInt(Moeda)
 }
 localStorage.setItem("Moeda",parseInt(Num))
-function Gerar(tamanho){
-    var Primeiro = "#"
-    var caracter = "0123456789"
-    for (var i = 0; i < tamanho ; i++){
-        Primeiro += caracter.charAt(Math.floor(Math.random() * caracter.length))
-    }
-    return Primeiro
-}
 const List = ({ items, removeItem}) => {
     return (
         <div>
@@ -45,7 +37,7 @@ const List = ({ items, removeItem}) => {
                     var Background = "goldenrod"
                     var Raridade = "ULTIMATE"
                 }else if(soma >= 100000 || soma1 >= 100000 || soma2 >= 100000 || soma3 >= 100000){
-                    var Background = Gerar(8)
+                    var Background = "red"
                     var Raridade = "???"
                 }
                 return (

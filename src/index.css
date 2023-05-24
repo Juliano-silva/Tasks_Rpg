@@ -3,7 +3,7 @@
   padding: 0;
 }
 body{
-overflow: auto;
+overflow: hidden;
 overflow-x: hidden;
 }
 body::-webkit-scrollbar{

@@ -1,31 +1,46 @@
-.Protagonist {
+/* Ability */
+.Ability > details{
+    border: 0.4vh solid rgb(109, 4, 109);
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 0.1vh 0.1vh 0.1vh black;
     cursor: pointer;
-    position: absolute;
-    left: 0;
-    padding: 2vh;
-    width: 7vh;
-    height: 6vh;
-    font-size: 7vh;
-    font-size: 3vh;
+    border-radius: 1vh;
+    width: 80%;
+    display: block;
+    margin: auto;
+    word-wrap: break-word;
+    margin-top: 2vh;
+    font-size: 2vh;
+    padding: 1vh;
 }
+.Ability > details > summary > h1{
+    text-transform: uppercase;
+    color: black;
+    text-shadow: 0.1vh 0.1vh 0.1vh white;
+}
+.Ability > details > button{
+    all: unset;
+    font-size: 5vh;
+    cursor: pointer;
+}
+.Ability > details > button:hover{
+    transition: 1s;
+    color: yellow;
+    text-shadow: 0.4vh 0.4vh 0.4vh black;
+}
+/* Companion */
 .CompanioBody{
+    position: absolute;
     border: 0.1vh solid transparent;
-    width: 180vh;
-    height: 12vh;
-    margin-left: 13vh;
+    left: 0;
+    width: 30vh;
+    height: 60vh;
+    margin-top: 14.5vh;
+    overflow: auto;
 }
 .Companions{
-    display: inline-block;
     font-size: 0px;
-    color: yellow;
-    border: 0.3vh solid transparent;
-    border-radius: 1vh;
-    padding: 1vh;
-    width: 12vh;
-    height: 13vh;
-    margin-left: 1vh;
-    overflow: auto;
-    word-break: break-all;
 }
 
 .Companions > img{
@@ -34,7 +49,7 @@
     border-radius: 50%;
     text-align: center;
     margin: auto;
-    margin-top: 1vh;
+    padding: 2vh;
 }
 .Companions::-webkit-scrollbar{
     width: 0px;
@@ -43,37 +58,37 @@
     all: unset;
 }
 .Companions:hover{
-    margin: 0;
-    position: absolute;
-    top: 45vh;
-    left: 50%;
-    width: 70vh;
-    border-radius: 2vh;
-    border: 0.3vh solid purple;
-    height: 80vh;
-    text-align: center;
-    background: rgb(15, 15, 4);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
     word-wrap: break-word;
-    overflow: auto;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    overflow: auto;
+    border: 0.1vh solid white;
+    width: 95%;
+    height: 50vh;
+    margin: 0;
+    border-radius: 2vh;
+    background: rgb(44, 21, 36);
+}
+.CompanioBody::-webkit-scrollbar{
+    width: 0px;
 }
 .Companions:hover img{
     width: 20vh;
     height: 20vh;
+    margin: auto;
 }
 .Companions:hover h1 {
     color: yellow;
-    font-size: 10vh;
+    font-size: 5vh;
     margin-top: 1vh;
 }
 .Companions:hover p{
-    font-size: 6vh;
+    font-size: 2vh;
+    width: 80%;
+    margin: auto;
     margin-top: 1vh;
 }
 .Companions:hover h5{
-    font-size: 5vh;
+    font-size: 4vh;
     margin-top: 1vh;
     color: yellowgreen;
 }
@@ -89,16 +104,317 @@
 }
 .CompanionsBtn {
     all: unset;
-    cursor: pointer;
     position: absolute;
-    padding: 2vh;
-    width: 7vh;
+    left: 0;
+    border: 0.2vh solid transparent;
+    margin-top: 75vh;
+    width: 23.5vh;
     height: 6vh;
-    font-size: 7vh;
+    font-size: 3vh;
+    cursor: pointer;
+    padding: 3vh;
+}
+/* Historic */
+.Historico > details{
+    border: 0.4vh solid purple;
+    background: rgb(51, 4, 51);
+    cursor: pointer;
+    padding: 2vh;
+    font-size: 3vh;
+    width: 80%;
+    border-radius: 1vh;
+    display: block;
+    margin: auto;
+    margin-top: 1vh;
+    word-wrap: break-word;
+}
+.Historico > details > h2{
+    margin-top: 1vh;
+}
+.Historico > details > summary > h3{
     text-align: center;
-    right: 0;
+}
+.Historico > details > img{
+    width: 100%;
+}
+.Historico > details > h4{
+    margin-top: 1vh;
+    font-size: 2.4vh;
+    margin-top: 2vh;
+    color: yellow;
+    text-shadow: 0.1vh 0.1vh 0.2vh goldenrod;
+}
+/* Projects */
+.Buttons {
+    display: inline-block;
+    color: white;
+    font-size: 4.5vh;
+    margin-left: 1.5vh;
+}
+.Conteudo {
+    border: 0.4vh solid yellow;
+    width: 90%;
+    display: block;
+    margin: auto;
+    border-radius: 1vh;
+    cursor: pointer;
+    margin-top: 1.5vh;
+    word-wrap: break-word;
 }
 
+.Conteudo>p {
+    text-align: justify;
+}
+
+.Conteudo:hover {
+    transition: 2s;
+    background: rgb(74, 188, 223);
+    border-color: black;
+    color: black;
+}
+
+.Conteudo>details>summary>h1 {
+    display: inline-block;
+    text-align: left;
+    border: 0.1vh solid transparent;
+    width: 95%;
+    margin-top: 0.5vh;
+    font-size: 3.5vh;
+}
+
+.Conteudo>details>summary>h1>div>button {
+    all: unset;
+}
+.ConteudoMonstrar {
+    all: unset;
+    height: 20vh;
+    overflow: auto;
+}
+
+.ConteudoMonstrar>img {
+    width: 80%;
+    display: block;
+    margin: auto;
+    height: 40vh;
+    border-radius: 0.5vh;
+    margin-top: 1vh;
+}
+
+.ConteudoMonstrar::-webkit-scrollbar {
+    width: 0px;
+}
+
+.ConteudoMonstrar > a ,.Historico > details > a{
+    color: yellow;
+    font-size: 3vh;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 1vh;
+    width: 100%;
+}
+
+.ConteudoMonstrar>a:hover {
+    transition: 2s;
+    filter: invert(1);
+}
+
+.Conteudo>details>summary>h1>span {
+    display: inline-block;
+    width: 17vh;
+    text-align: left;
+    overflow: hidden;
+    color: white;
+    white-space: nowrap;
+    margin-left: 2vh;
+}
+/* Protagonist */
+.TituloSide{
+    padding: 0.5vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: transparent;
+    background-image: url("https://i.pinimg.com/originals/c0/78/2d/c0782de51bd9ebc773c1ea933a896f86.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: drop-shadow(0.3vh 0.3vh 0.3vh yellow);
+    -webkit-background-clip: text;
+    font-size: 10vh;
+    border: 0.1vh solid transparent;
+    width: 50vh;
+    display: block;
+    margin: auto;
+}
+.Sidebar{
+    border: 0.2vh solid rgb(27, 18, 27);
+    background-color: rgb(27, 18, 27);
+    position: absolute;
+    width: 30vh;
+    height: 99.7vh;
+    top: 0;
+}
+.Sidebar > button,.AbrirSide{
+    all: unset;
+    border: 0.1vh solid rgb(27, 18, 27);
+    font-size: 10vh;
+    padding: 1.5vh;
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-top: -3vh;
+}
+.Sidebar,.CompanionsBtn,.CompanioBody{display: none;}
+.ConteúdosFicha{
+    word-break: break-all;
+    overflow: auto;
+}
+.ConteúdosFicha::-webkit-scrollbar{
+    width: 0px;
+}
+.ConteúdosFicha > h2{
+    margin-top: 2vh;
+    font-size: 5vh;
+    color: yellow;
+}
+.ConteúdosFicha > h3{
+    margin-top: 2vh;
+    font-size: 4vh;
+    color: greenyellow;
+}
+.ConteúdosFicha > img{
+    width: 80%;
+    display: block;
+    margin: auto;
+    height: 35vh;
+    border-radius: 1vh;
+    margin-top: 1vh;
+}
+.ConteúdosFicha > p{
+    color: red;
+    font-size: 3vh;
+    margin-top: 1vh;
+}
+.ConteúdosFicha > h5{
+    color: aqua;
+    font-size: 2vh;
+    margin-top: 1vh;
+}
+.Protagonist {
+    all: unset;
+    display: block;
+    left: 0;
+    border: 0.2vh solid transparent;
+    margin-top: 13vh;
+    width: 23.5vh;
+    height: 6vh;
+    font-size: 3vh;
+    padding: 3vh;
+}
+/* Store */
+.Carteira {
+    display: none;
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    height: 30vh;
+    width: 60vh;
+    overflow: auto;
+    border-radius: 2vh;
+    text-align: center;
+    background: rgb(19, 18, 18);
+    color: yellow;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.Carteira::-webkit-scrollbar{
+    width: 0px;
+}
+.Carteira>div>img {
+    width: 15vh;
+    display: block;
+    margin: auto;
+}
+.Carteira > button,.FecharPP{
+    all: unset;
+    width: 10vh;
+    border: 0.1vh solid transparent;
+    font-size: 4vh;
+    color: white;
+    margin-left: 20vh;
+    cursor: pointer;
+    margin-top: 0.2vh;
+    position: absolute;
+}
+.Carteira>h1 {
+    font-size: 5vh;
+    margin-top: 2vh;
+    text-transform: uppercase;
+}
+.Carteira>div>h1{
+    font-size: 3vh;
+    margin-top: 2vh;
+    text-transform: uppercase;
+    color: yellow;
+    text-shadow: 0.2vh 0.2vh 0.2vh green;
+}
+.Store > details{
+    border: 0.4vh solid gold;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 0.1vh 0.1vh 0.1vh black;
+    cursor: pointer;
+    border-radius: 2vh;
+    width: 80%;
+    display: block;
+    margin: auto;
+    word-wrap: break-word;
+    margin-top: 2vh;
+    font-size: 2vh;
+    padding: 2vh;
+}
+.Store > details > summary > h1 ,.Ability > details > summary > h1{
+    font-size: 5vh;
+}
+.Store > details > h1, .Ability > details > h1{
+    font-size: 4vh;
+}
+.Store > details > h2,.Ability > details > h2{
+    font-size: 2.5vh;
+    display: block;
+    margin: auto;
+    margin-top: 1vh;
+}
+.Store > details > h3 ,.Ability > details > h3{
+    font-size: 7vh;
+    margin-top: 1vh;
+    color: rgb(9, 68, 9);
+    text-shadow: 0.1vh 0.1vh 0.1vh yellow;
+}
+.Store > details > h4 ,.Ability > details > h4{
+    font-size: 4vh;
+    color: black;
+    text-shadow: 0.2vh 0.3vh 0.3vh white;
+}
+.Store > details > p,.Ability > details > p{
+    margin-top: 1vh;
+    font-size: 3vh;
+    text-align: left;
+}
+.Store > details > img,.Ability > details > img{
+    width: 25vh;
+    height: 25vh;
+    margin: auto;
+    margin-top: 1vh;
+    border-radius: 50%;
+}
+.Store > details > button{
+    all: unset;
+    font-size: 4vh;
+    margin: auto;
+    margin-top: 1vh;
+}
+/* ALL */
 .BtnAdd {
     all: unset;
     margin-top: 2vh;
@@ -115,8 +431,26 @@
     transition: 2s;
     filter: invert(1);
 }
-
-.ConfiCentralizada {
+.BtnEnviar{
+    background: rgb(58, 7, 58);
+    border: 0.6vh solid yellow;
+    margin-top: 2vh;
+    width: 30%;
+    padding: 0.4vh;
+    color: yellow;
+    font-size: 2vh;
+    border-radius: 2vh;
+    cursor: pointer;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+}
+.BtnEnviar:hover {
+    transition: 2s;
+    background: rgb(177, 23, 177);
+    color: white;
+}
+.ConfiCentralizada{
     display: none;
     margin: 0;
     position: absolute;
@@ -178,305 +512,4 @@
     text-transform: uppercase;
     font-weight: bold;
     font-style: italic;
-}
-.BtnEnviar{
-    background: rgb(58, 7, 58);
-    border: 0.6vh solid yellow;
-    margin-top: 2vh;
-    width: 30%;
-    padding: 0.4vh;
-    color: yellow;
-    font-size: 2vh;
-    border-radius: 2vh;
-    cursor: pointer;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: bold;
-    font-style: italic;
-}
-.BtnEnviar:hover {
-    transition: 2s;
-    background: rgb(177, 23, 177);
-    color: white;
-}
-.Conteudo {
-    border: 0.4vh solid yellow;
-    width: 90%;
-    display: block;
-    margin: auto;
-    border-radius: 1vh;
-    cursor: pointer;
-    margin-top: 1.5vh;
-    word-wrap: break-word;
-}
-
-.Conteudo>p {
-    text-align: justify;
-}
-
-.Conteudo:hover {
-    transition: 2s;
-    background: rgb(74, 188, 223);
-    border-color: black;
-    color: black;
-}
-
-.Conteudo>details>summary>h1 {
-    display: inline-block;
-    text-align: left;
-    border: 0.1vh solid transparent;
-    width: 95%;
-    margin-top: 0.5vh;
-    font-size: 3.5vh;
-}
-
-.Conteudo>details>summary>h1>div>button {
-    all: unset;
-}
-
-.Buttons {
-    display: inline-block;
-    color: white;
-    font-size: 4.5vh;
-    margin-left: 1.5vh;
-}
-
-.ConteudoMonstrar {
-    all: unset;
-    height: 20vh;
-    overflow: auto;
-}
-
-.ConteudoMonstrar>img {
-    width: 80%;
-    display: block;
-    margin: auto;
-    height: 40vh;
-    border-radius: 0.5vh;
-    margin-top: 1vh;
-}
-
-.ConteudoMonstrar::-webkit-scrollbar {
-    width: 0px;
-}
-
-.ConteudoMonstrar > a ,.Historico > details > a{
-    color: yellow;
-    font-size: 3vh;
-    text-decoration: none;
-    text-align: center;
-    margin-top: 1vh;
-    width: 100%;
-}
-
-.ConteudoMonstrar>a:hover {
-    transition: 2s;
-    filter: invert(1);
-}
-
-.Conteudo>details>summary>h1>span {
-    display: inline-block;
-    width: 17vh;
-    text-align: left;
-    overflow: hidden;
-    color: white;
-    white-space: nowrap;
-    margin-left: 2vh;
-}
-
-.Carteira {
-    display: none;
-    position: absolute;
-    margin: 0;
-    top: 50%;
-    left: 50%;
-    height: 30vh;
-    width: 60vh;
-    overflow: auto;
-    border-radius: 2vh;
-    text-align: center;
-    background: rgb(19, 18, 18);
-    color: yellow;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-}
-.Carteira::-webkit-scrollbar{
-    width: 0px;
-}
-.Carteira>div>img {
-    width: 15vh;
-    display: block;
-    margin: auto;
-}
-.Carteira > button,.FecharPP{
-    all: unset;
-    width: 10vh;
-    border: 0.1vh solid transparent;
-    font-size: 4vh;
-    color: white;
-    margin-left: 20vh;
-    cursor: pointer;
-    margin-top: 0.2vh;
-    position: absolute;
-}
-.Carteira>h1 {
-    font-size: 5vh;
-    margin-top: 2vh;
-    text-transform: uppercase;
-}
-.Carteira>div>h1{
-    font-size: 3vh;
-    margin-top: 2vh;
-    text-transform: uppercase;
-    color: yellow;
-    text-shadow: 0.2vh 0.2vh 0.2vh green;
-}
-.Historico > details{
-    border: 0.4vh solid purple;
-    background: rgb(51, 4, 51);
-    cursor: pointer;
-    padding: 2vh;
-    font-size: 3vh;
-    width: 80%;
-    border-radius: 1vh;
-    display: block;
-    margin: auto;
-    margin-top: 1vh;
-    word-wrap: break-word;
-}
-.Historico > details > h2{
-    margin-top: 1vh;
-}
-.Historico > details > summary > h3{
-    text-align: center;
-}
-.Historico > details > img{
-    width: 100%;
-}
-.Historico > details > h4{
-    margin-top: 1vh;
-    font-size: 2.4vh;
-    margin-top: 2vh;
-    color: yellow;
-    text-shadow: 0.1vh 0.1vh 0.2vh goldenrod;
-}
-.Store > details{
-    border: 0.4vh solid gold;
-    color: white;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-shadow: 0.1vh 0.1vh 0.1vh black;
-    cursor: pointer;
-    border-radius: 2vh;
-    width: 80%;
-    display: block;
-    margin: auto;
-    word-wrap: break-word;
-    margin-top: 2vh;
-    font-size: 2vh;
-    padding: 2vh;
-}
-.Store > details > summary > h1 ,.Ability > details > summary > h1{
-    font-size: 5vh;
-}
-.Store > details > h1, .Ability > details > h1{
-    font-size: 4vh;
-}
-.Store > details > h2,.Ability > details > h2{
-    font-size: 2.5vh;
-    display: block;
-    margin: auto;
-    margin-top: 1vh;
-}
-.Store > details > h3 ,.Ability > details > h3{
-    font-size: 7vh;
-    margin-top: 1vh;
-    color: rgb(9, 68, 9);
-    text-shadow: 0.1vh 0.1vh 0.1vh yellow;
-}
-.Store > details > h4 ,.Ability > details > h4{
-    font-size: 4vh;
-    color: black;
-    text-shadow: 0.2vh 0.3vh 0.3vh white;
-}
-.Store > details > p,.Ability > details > p{
-    margin-top: 1vh;
-    font-size: 3vh;
-    text-align: left;
-}
-.Store > details > img,.Ability > details > img{
-    width: 25vh;
-    height: 25vh;
-    margin: auto;
-    margin-top: 1vh;
-    border-radius: 50%;
-}
-.Store > details > button{
-    all: unset;
-    font-size: 4vh;
-    margin: auto;
-    margin-top: 1vh;
-}
-.Ability > details{
-    border: 0.4vh solid rgb(109, 4, 109);
-    color: white;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-shadow: 0.1vh 0.1vh 0.1vh black;
-    cursor: pointer;
-    border-radius: 1vh;
-    width: 80%;
-    display: block;
-    margin: auto;
-    word-wrap: break-word;
-    margin-top: 2vh;
-    font-size: 2vh;
-    padding: 1vh;
-}
-.Ability > details > summary > h1{
-    text-transform: uppercase;
-    color: black;
-    text-shadow: 0.1vh 0.1vh 0.1vh white;
-}
-.Ability > details > button{
-    all: unset;
-    font-size: 5vh;
-    cursor: pointer;
-}
-.Ability > details > button:hover{
-    transition: 1s;
-    color: yellow;
-    text-shadow: 0.4vh 0.4vh 0.4vh black;
-}
-.ConteúdosFicha{
-    word-break: break-all;
-    overflow: auto;
-}
-.ConteúdosFicha::-webkit-scrollbar{
-    width: 0px;
-}
-.ConteúdosFicha > h2{
-    margin-top: 2vh;
-    font-size: 5vh;
-    color: yellow;
-}
-.ConteúdosFicha > h3{
-    margin-top: 2vh;
-    font-size: 4vh;
-    color: greenyellow;
-}
-.ConteúdosFicha > img{
-    width: 80%;
-    display: block;
-    margin: auto;
-    height: 40vh;
-    border-radius: 0.5vh;
-    margin-top: 1vh;
-}
-.ConteúdosFicha > p{
-    color: red;
-    font-size: 3vh;
-    margin-top: 1vh;
-}
-.ConteúdosFicha > h5{
-    color: aqua;
-    font-size: 2vh;
-    margin-top: 1vh;
 }

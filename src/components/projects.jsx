@@ -10,16 +10,16 @@ const List = ({ items, removeItem, editItem }) => {
     return (
         <div>
             {items.map((item) => {
-                const { id, title, textTeste, image, video, link, NotExt } = item;
+                const { id, NamesAPI, textTeste, image, video, link, NotExt } = item;
                 return (
                     <div>
                         <div key={id} className={style.Conteudo}>
                             <details>
-                                <summary><h1><span>{title}</span> <div className={style.Buttons}>
+                                <summary><h1><span>{NamesAPI}</span> <div className={style.Buttons}>
                                     <button onClick={() => editItem(id)}>🖊️</button>
                                     <button onClick={() => removeItem(id)}>🗑️</button></div></h1></summary>
                                 <div className={style.ConteudoMonstrar}>
-                                    <h1>{id}.{title}</h1>
+                                    <h1>{id}.{NamesAPI}</h1>
                                     <p>{textTeste}</p>
                                     <a href={link}>{link}</a>
                                     <p>{NotExt}</p>
@@ -69,7 +69,7 @@ const Adicionar = () => {
         if (name && isEditing, link && isEditing, textTeste && isEditing, image && isEditing, video && isEditing, NotExt && isEditing, date && isEditing) {
             setApiAdc(
                 ApiAdc.map((item) => {
-                    if (item.id === editId) { return { ...item, title: name, link: link, image: image, video: video, NotExt: NotExt, textTeste: textTeste, date: ConteudoData } }
+                    if (item.id === editId) { return { ...item, NamesAPI: name, link: link, image: image, video: video, NotExt: NotExt, textTeste: textTeste, date: ConteudoData } }
                 })
             );
             setName("");
@@ -85,7 +85,7 @@ const Adicionar = () => {
             let DadosApi = JSON.parse(localStorage.getItem("ApiAdc"))
             var Dados = JSON.stringify((parseInt(DadosApi.length)))
             var IDs = localStorage.setItem("NumDados", Dados)
-            const newItem = { id: localStorage.getItem("NumDados"), title: name, link: link, image: image, video: video, NotExt: NotExt, textTeste: textTeste, date: ConteudoData };
+            const newItem = { id: localStorage.getItem("NumDados"), NamesAPI: name, link: link, image: image, video: video, NotExt: NotExt, textTeste: textTeste, date: ConteudoData };
             setApiAdc([...ApiAdc, newItem]);
             setName("");
             setLink("");
@@ -104,7 +104,7 @@ const Adicionar = () => {
         const EditItem = ApiAdc.find((item) => item.id === id);
         setIdEditing(true);
         setEditID(id);
-        setName(EditItem.title);
+        setName(EditItem.NamesAPI);
         setLink(EditItem.link)
         setDate(EditItem.date)
         setImage(EditItem.image);

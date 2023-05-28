@@ -93,6 +93,7 @@ const Adicionar = () => {
         var Quantidade = document.getElementById("Quantidade")
         var Image = document.getElementById("Image")
         var value = selection.options[selection.selectedIndex].value
+        localStorage.setItem("Escolha", "Arma")
         Quantidade.style.display = "block"
         res.style.display = "block"
         Image.style.display = "none"

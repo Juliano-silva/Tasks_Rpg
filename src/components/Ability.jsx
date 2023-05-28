@@ -14,13 +14,13 @@ const List = ({ items }) => {
                 var soma3 = parseInt(atk)
                 JSON.stringify(array.push(title))
                 function Comprando(){
-                if (Dinheiro > preco){
+                if (parseInt(Dinheiro) > preco){
                     alert("Você comprou o item " + id + " " + title)
                     var ValorPago = Dinheiro - preco
                     localStorage.setItem("Moeda",parseInt(ValorPago))
                     localStorage.setItem("Comprandos",JSON.stringify(array))
                     location.reload()
-                } else{
+                } else if (parseInt(Dinheiro) < preco){
                     alert("Você não pode Comprar")
                 }
             }

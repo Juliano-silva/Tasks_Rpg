@@ -5,11 +5,11 @@ const List = ({ items }) => {
     <div id='BodyJr'>
       <h1>Histórico:</h1>
       {items.map((item) => {
-        const { id, title, textTeste, image, video, link, NotExt, date } = item;
+        const { id, NamesAPI, textTeste, image, video, link, NotExt, date } = item;
         return (
           <div key={id} className={style.Historico}>
             <details>
-              <summary><h3>{id}.{title}</h3></summary>
+              <summary><h3>{id}.{NamesAPI}</h3></summary>
               <h2>{textTeste}</h2>
               <a href={link}>{link}</a>
               <img src={image} alt="" />
